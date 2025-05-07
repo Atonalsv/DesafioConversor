@@ -5,7 +5,13 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ExchangeRateApi {
+
+
+
+
+
     public static void main(String[] args) throws IOException, InterruptedException {
+
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
