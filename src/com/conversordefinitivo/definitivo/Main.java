@@ -16,7 +16,7 @@ public class Main {
             int opcion = scanner.nextInt();
 
             if(opcion == 7){
-                System.out.println("Has salido de la calculadora.");
+                System.out.println("Ha salido de la aplicacion. Gracias por usar el conversor de monedas.");
                 break;
             } else if (opcion > 7){
                 System.out.println("Selecciona una opcion valida.");

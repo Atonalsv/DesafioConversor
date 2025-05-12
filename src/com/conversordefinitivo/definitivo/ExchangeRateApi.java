@@ -30,17 +30,12 @@ public class ExchangeRateApi {
             HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
 
-            //String json = response.body();
-
             JsonObject json = JsonParser.parseString(response.body()).getAsJsonObject();
             JsonObject rates = json.getAsJsonObject("conversion_rates");
 
             double cambio = rates.get(monedaDestino).getAsDouble();
-            //double resultado = cantidad * cambio;
             return cambio;
 
-            //ValoresDeRetorno valoresDeRetorno = gson.fromJson(response.body(), ValoresDeRetorno.class);
-            //return valoresDeRetorno.getConversionRates();
         } catch (Exception e) {
             e.printStackTrace();
             return 0;
