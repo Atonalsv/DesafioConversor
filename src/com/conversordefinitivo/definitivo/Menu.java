@@ -1,7 +1,7 @@
-package com.conversordemonedas.layout;
+package com.conversordefinitivo.definitivo;
 
 public class Menu {
-        public static String menu = """
+    public static String menu = """
                 **************************************************
                 Sea bienvenido/a al conversor de moneda
                 \n
@@ -16,6 +16,4 @@ public class Menu {
                 Elija una opcion valida:
                 ***********************************************
                 """;
-
-
 }
